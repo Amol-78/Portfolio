@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>Amol Shelke | Data Scientist & AI/ML Enthusiast</title>
+    <meta name="description"
+        content="Portfolio of Amol Shelke - Professional Python Developer and AI/ML Specialist. Exploring Machine Learning, Deep Learning, Natural Language Processing, and Full-Stack Data Applications.">
+    <meta name="keywords"
+        content="Amol Shelke, Python Developer, AI/ML Engineer, Machine Learning, Deep Learning, Streamlit, LangChain, RAG, Data Scientist Portfolio">
+    <meta name="author" content="Amol Shelke">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amol Shelke | Python Developer & AI/ML Enthusiast">
+    <meta property="og:description"
+        content="Explore state-of-the-art AI applications, RAG pipelines, data visualization tools, and clean Python backend solutions.">
+    <meta property="og:image" content="assets/images/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Amol Shelke | Data Scientist & AI/ML Enthusiast">
+    <meta property="twitter:description"
+        content="Explore state-of-the-art AI applications, RAG pipelines, data visualization tools, and clean Python backend solutions.">
+    <meta property="twitter:image" content="assets/images/profile.png">
+
+    <!-- Schema.org JSON-LD for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Amol Shelke",
+      "jobTitle": "Data Scientist & AI/ML Engineer",
+      "url": "https://amolshelke.dev",
+      "sameAs": [
+        "https://github.com/amolshelke",
+        "https://linkedin.com/in/amolshelke"
+      ],
+      "knowsAbout": ["Python", "Machine Learning", "Deep Learning", "LangChain", "Generative AI", "Data Science", "SQL", "Streamlit"]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <!-- Interactive Loader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-sym">&lt;</span>AS<span class="logo-sym">/&gt;</span>
+            </div>
+            <div class="loader-circle-wrapper">
+                <svg class="loader-circle" viewBox="0 0 100 100">
+                    <circle class="loader-circle-bg" cx="50" cy="50" r="45"></circle>
+                    <circle class="loader-circle-progress" id="loader-progress-circle" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <div class="loader-percent" id="loader-percent">0%</div>
+            </div>
+            <div class="loader-status" id="loader-status">INITIALIZING NEURAL NETWORKS...</div>
+            <div class="loader-diagnostics">
+                <span id="diagnostic-line">Loading Python Core modules...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neural Network Background Canvas -->
+    <canvas id="neural-bg" class="neural-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="main-header glass">
+        <div class="header-container">
+            <a href="#hero" class="logo text-glow" id="nav-logo">
+                <span class="logo-sym">&lt;</span>Amol<span class="logo-sym">.py/&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#learning" class="nav-link">Learning Journey</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark theme">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+
+                <!-- Hamburger Menu -->
+                <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="hero" class="hero-section full-screen">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tagline glass">
+                        <span class="pulsing-dot"></span>
+                        <span class="tagline-text">Open for Freelance & Full-time Roles</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Amol Shelke</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text" class="typed-cursor-wrapper"></span><span
+                            class="typing-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Specializing in building intelligent AI/ML systems, scalable data-driven applications, and
+                        advanced RAG solutions using Python, Deep Learning, NLP, and Generative AI technologies.
+                        Passionate about transforming complex data and intelligent algorithms into impactful real-world
+                        AI solutions.
+
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="assets/resume-mock.pdf" download="Amol_Sharma_Resume.pdf"
+                            class="btn btn-primary btn-magnetic">
+                            <span>Download CV</span>
+                            <i data-lucide="arrow-down-to-line"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-magnetic">
+                            <span>Hire Me</span>
+                            <i data-lucide="message-square"></i>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/Amol-78" target="_blank" rel="noopener" class="social-icon"
+                            aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amol-shelke7821/" target="_blank" rel="noopener" class="social-icon"
+                            aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:amol.sharma.developer@gmail.com" class="social-icon" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://twitter.com/amolsharma" target="_blank" rel="noopener" class="social-icon"
+                            aria-label="Twitter">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="glow-ring glow-1"></div>
+                        <div class="glow-ring glow-2"></div>
+                        <div class="profile-image-wrapper glass">
+                            <img src="assets/images/AmolRCIMG.png" alt="Amol Sharma Headshot" class="profile-img">
+                        </div>
+                    </div>
+
+                    <!-- Floating Tech Badges -->
+                    <div class="floating-badge badge-python glass">
+                        <span class="badge-icon">🐍</span>
+                        <span>Python</span>
+                    </div>
+                    <div class="floating-badge badge-ai glass">
+                        <span class="badge-icon">🤖</span>
+                        <span>AI/ML</span>
+                    </div>
+                    <div class="floating-badge badge-data glass">
+                        <span class="badge-icon">📊</span>
+                        <span>Data Science</span>
+                    </div>
+                    <div class="floating-badge badge-rag glass">
+                        <span class="badge-icon">🔍</span>
+                        <span>RAG</span>
+                    </div>
+                    <div class="floating-badge badge-langchain glass">
+                        <span class="badge-icon">⛓️</span>
+                        <span>LangChain</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About Me section">
+                <span>Scroll Down</span>
+                <i data-lucide="chevrons-down" class="scroll-bounce"></i>
+            </a>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="about-section py-20">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info glass">
+                        <h3 class="about-heading">My Mission</h3>
+                        <p class="about-paragraph">
+                            I am a passionate AI/ML and Data Science enthusiast focused on building intelligent and
+                            scalable solutions using modern Artificial Intelligence technologies. My interests include
+                            Machine Learning, Deep Learning, NLP, RAG, Agentic AI, and Generative AI systems. I enjoy
+                            developing AI-powered applications, predictive models, and intelligent workflows using
+                            Python and modern frameworks.
+                        </p>
+                        <p class="about-paragraph">
+                            With a strong analytical mindset, I love transforming complex data into meaningful insights
+                            and smart solutions. I also create interactive dashboards and visualization tools using
+                            Streamlit and Gradio to make data more accessible and impactful. My goal is to combine
+                            innovation, data, and software engineering to solve real-world problems through Artificial
+                            Intelligence.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span class="detail-value">Maharashtra, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Interests:</span>
+                                <span class="detail-value">AI/ML, DL, RAG, NLP, Generative AI</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Status:</span>
+                                <span class="detail-value text-green">Active & Hiring Ready</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cards-grid">
+                        <div class="about-card glass card-hover">
+                            <div class="card-icon gradient-icon-blue">
+                                <i data-lucide="graduation-cap"></i>
+                            </div>
+                            <h4>Education</h4>
+                            <p>Bachelor Computer Application</p>
+                            <span class="card-tag">BCA</span>
+                        </div>
+
+                        <div class="about-card glass card-hover">
+                            <div class="card-icon gradient-icon-purple">
+                                <i data-lucide="target"></i>
+                            </div>
+                            <h4>Career Goals</h4>
+                            <p>Building high-performing enterprise AI solutions and engineering smart developer tools.
+                            </p>
+                            <span class="card-tag">R&D / Product</span>
+                        </div>
+
+                        <div class="about-card glass card-hover">
+                            <div class="card-icon gradient-icon-green">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h4>Full Stack AI</h4>
+                            <p>Blending Python analytics with responsive modern glassmorphic web apps.</p>
+                            <span class="card-tag">Web & Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="skills-section py-20 bg-dark-alt">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">What I Know</span>
+                    <h2 class="section-title">Professional Toolkit</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Core Technologies (Radial Circles) -->
+                    <div class="skills-category-box glass">
+                        <h3>Core & Languages</h3>
+                        <p class="category-desc">My primary programming building blocks.</p>
+
+                        <div class="radial-skills">
+                            <div class="radial-skill-item" data-skill="Python" data-percent="92">
+                                <div class="radial-progress-wrapper">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="40" class="radial-bg"></circle>
+                                        <circle cx="50" cy="50" r="40" class="radial-bar py-bar"
+                                            stroke-dasharray="251.2" stroke-dashoffset="251.2"></circle>
+                                    </svg>
+                                    <span class="radial-val">0%</span>
+                                </div>
+                                <span class="radial-title">Python</span>
+                            </div>
+
+                            <div class="radial-skill-item" data-skill="JavaScript" data-percent="80">
+                                <div class="radial-progress-wrapper">
+                                    <svg viewBox="0 0 100 100">
+                                        <circle cx="50" cy="50" r="40" class="radial-bg"></circle>
+                                        <circle cx="50" cy="50" r="40" class="radial-bar js-bar"
+                                            stroke-dasharray="251.2" stroke-dashoffset="251.2"></circle>
+                                    </svg>
+                                    <span class="radial-val">0%</span>
+                                </div>
+                                <span class="radial-title">SQL</span>
+                            </div>
+                        </div>
+
+                        <div class="sub-skills-list">
+                            <div class="sub-skill-bar-item">
+                                <div class="bar-info">
+                                    <span>HTML5 & CSS3</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill" style="width: 0%;" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="sub-skill-bar-item">
+                                <div class="bar-info">
+                                    <span>SQL & Database Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill" style="width: 0%;" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: AI & Data Science (Progress Bars) -->
+                    <div class="skills-category-box glass">
+                        <h3>AI, ML & Data Science</h3>
+                        <p class="category-desc">Transforming complex datasets into predictive intelligence.</p>
+
+                        <div class="linear-skills-list">
+                            <div class="skill-bar-item">
+                                <div class="bar-info">
+                                    <span>Machine Learning (Scikit-Learn)</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill fill-purple" style="width: 0%;" data-width="88%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar-item">
+                                <div class="bar-info">
+                                    <span>NumPy & Pandas</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill fill-purple" style="width: 0%;" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar-item">
+                                <div class="bar-info">
+                                    <span>Matplotlib & Seaborn</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill fill-purple" style="width: 0%;" data-width="82%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar-item">
+                                <div class="bar-info">
+                                    <span>Retrieval-Augmented Gen (RAG) & LangChain</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-fill fill-purple" style="width: 0%;" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: App Interfaces & Systems (Cards Grid) -->
+                    <div class="skills-category-box glass">
+                        <h3>Web-UI & Tools</h3>
+                        <p class="category-desc">Deploying web applications and maintaining environment pipelines.</p>
+
+                        <div class="skills-card-subgrid">
+                            <div class="mini-skill-card glass">
+                                <div class="mini-card-head">
+                                    <i data-lucide="layout" class="text-green"></i>
+                                    <span>Streamlit</span>
+                                </div>
+                                <p>Interactive data dashboards and models showcase.</p>
+                            </div>
+
+                            <div class="mini-skill-card glass">
+                                <div class="mini-card-head">
+                                    <i data-lucide="sliders" class="text-green"></i>
+                                    <span>Gradio</span>
+                                </div>
+                                <p>Rapid interface generation for ML inference testing.</p>
+                            </div>
+
+                            <div class="mini-skill-card glass">
+                                <div class="mini-card-head">
+                                    <i data-lucide="git-branch" class="text-green"></i>
+                                    <span>Git & GitHub</span>
+                                </div>
+                                <p>Source versioning, code pipelines, and collaboration.</p>
+                            </div>
+
+                            <div class="mini-skill-card glass">
+                                <div class="mini-card-head">
+                                    <i data-lucide="database" class="text-green"></i>
+                                    <span>SQL Server</span>
+                                </div>
+                                <p>Optimizing stored procedures, triggers, and query indexing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="projects-section py-20">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Projects Navigation Filters -->
+                <div class="projects-filter-wrapper">
+                    <ul class="filter-tabs">
+                        <li class="filter-tab active" data-filter="all">All Projects</li>
+                        <li class="filter-tab" data-filter="Generative-ai">Generative AI</li>
+                        <li class="filter-tab" data-filter="Computer-vision">Computer Vision</li>
+                        <li class="filter-tab" data-filter="Agentic-ai">Agentic AI</li>
+                        <li class="filter-tab" data-filter="ML">ML</li>
+                        <li class="filter-tab" data-filter="Data-analytics">Data Analytics</li>
+                    </ul>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: AI RAG Application -->
+                    <div class="project-card glass card-hover" data-category="Agentic-ai">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/agenticRag.png" alt="AI RAG Application UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <!-- <a href="https://github.com/amolsharma" target="_blank" rel="noopener"
+                                        class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i data-lucide="github"></i>
+                                    </a> -->
+
+                                    <a href="https://github.com/Amol-78/Agentic-RAG-Document-Chat-System"
+                                        target="_blank" rel="noopener" class="icon-btn-circle"
+                                        aria-label="GitHub Repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+
+
+
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-purple">Generative AI</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>Agentic RAG</h3>
+                            <p>Developed an intelligent document Q&A platform that enables users to upload documents and
+                                retrieve accurate answers using natural language. Features include document management,
+                                context-aware retrieval, query refinement, chat history, and a responsive dashboard
+                                interface.</p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>LangChain</span>
+                                <span>Gemini</span>
+                                <span>FAISS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Streamlit Data Visualizer -->
+                    <div class="project-card glass card-hover" data-category="Computer-vision">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/airpaint.png" alt="Streamlit Data Visualizer UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/Air_painter_by_finger" target="_blank"
+                                        rel="noopener" class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-blue">Data Web App</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>Air Painter</h3>
+                            <p>Built an AI-powered Air Painter that allows users to create digital art using hand
+                                gestures and a webcam. Features include real-time finger tracking, multiple drawing
+                                tools, gesture-based controls, undo functionality, and artwork saving.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>MediaPipe</span>
+                                <span>NumPy</span>
+                                <span>Gesture Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Typing Practice Platform -->
+                    <div class="project-card glass card-hover" data-category="Computer-vision">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/faceattendance.png" alt="Typing Practice Platform UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/Face_Scaning_Attandance" target="_blank"
+                                        rel="noopener" class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-green">Interactive JS</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>Face Attendance</h3>
+                            <p>Built a Face Recognition Attendance System that automates attendance logging using
+                                real-time facial recognition. The application supports dynamic face enrollment,
+                                duplicate-entry prevention, timestamp-based tracking, and live visual feedback for
+                                efficient attendance management.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Face Recognition</span>
+                                <span>Pandas</span>
+                                <span>Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Typing Practice Platform -->
+                    <div class="project-card glass card-hover" data-category="ML">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/houseprice.png" alt="Typing Practice Platform UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/California_House_Price_Predictor"
+                                        target="_blank" rel="noopener" class="icon-btn-circle"
+                                        aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-green">Interactive JS</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>House Price Prediction</h3>
+                            <p>Built a Machine Learning application for California House Price Prediction with support
+                                for single and batch predictions. The project integrates a FastAPI backend, interactive
+                                user interface, and Docker-based deployment for efficient model serving.</p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>FastAPI</span>
+                                <span>Scikit-learn</span>
+                                <span>Docker</span>
+                                <span>Pandas</span>
+                                <span>HTML/CSS/JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Typing Practice Platform -->
+                    <div class="project-card glass card-hover" data-category="Data-analytics">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/automaticEDA.png" alt="Typing Practice Platform UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/Automatic_EDA_Application" target="_blank"
+                                        rel="noopener" class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-green">Interactive JS</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>Automated EDA Dashboard</h3>
+                            <p>Developed an interactive EDA dashboard that simplifies data exploration, cleaning, and
+                                visualization. The application enables users to analyze datasets, detect and handle
+                                missing values and outliers, compare original and cleaned data, and generate insightful
+                                visualizations through an intuitive web interface.</p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>Seaborn</span>
+                                <span>SciPy</span>
+                                <span>EDA</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Project 6: Gradio Data Visualization App -->
+                    <div class="project-card glass card-hover" data-category="Computer-vision">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/objectdetection.png" alt="Gradio App UI Design" class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/YOLO-Object-Detection" target="_blank"
+                                        rel="noopener" class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-purple">ML Testing GUI</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>YOLO Object Detection</h3>
+                            <p>Built a real-time object detection and tracking application using YOLO models, supporting
+                                image, video, and webcam inputs. The platform offers accurate object recognition, live
+                                tracking, customizable detection controls, and an intuitive interface for computer
+                                vision applications.</p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>YOLOv3/YOLOv8</span>
+                                <span>OpenCV</span>
+                                <span>Computer Vision</span>
+                                <span>Object Detection</span>
+                                <span>Object Tracking</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 7: Typing Practice Platform -->
+                    <div class="project-card glass card-hover" data-category="Generative-ai">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/SQLASSI.png" alt="Typing Practice Platform UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78" target="_blank" rel="noopener"
+                                        class="icon-btn-circle" aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-green">Interactive JS</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>AI-Powered SQL Assistant</h3>
+                            <p>Built an AI-powered SQL Assistant that transforms natural language questions into SQL
+                                queries, executes them on a database, and presents results through an interactive
+                                interface. The system also explains generated queries to help users understand and learn
+                                SQL concepts.
+                            </p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Pandas</span>
+                                <span>Google Gemini</span>
+                                <span>SQLite</span>
+                                <span>Prompt Engineering</span>
+                                <span>Generative AI</span>
+                                <span>SQL</span>
+                                <span>NLP</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 8: Movie Search Application -->
+                    <div class="project-card glass card-hover" data-category="Computer-vision">
+                        <div class="project-img-wrapper">
+                            <img src="assets/images/nuberPlate.png" alt="Movie Search App UI Design"
+                                class="project-img">
+                            <div class="project-overlay glass">
+                                <div class="project-action-links">
+                                    <a href="https://github.com/Amol-78/ANPR-System-Using-YOLO-and-EasyOCR"
+                                        target="_blank" rel="noopener" class="icon-btn-circle"
+                                        aria-label="View Code on GitHub">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="#" class="icon-btn-circle" aria-label="View Live Demonstration">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <span class="project-badge bg-badge-blue">API Integration</span> -->
+                        </div>
+                        <div class="project-info">
+                            <h3>Number Plate Detection</h3>
+                            <p>Built an Automatic Number Plate Recognition (ANPR) system that uses computer vision and
+                                OCR to detect, recognize, and log vehicle license plates from real-time video streams.
+                                The solution enables accurate vehicle identification and automated data recording.</p>
+                            <div class="project-tech-tags">
+                                <span>Python</span>
+                                <span>YOLO</span>
+                                <span>OpenCV</span>
+                                <span>EasyOCR</span>
+                                <span>NumPy</span>
+                                <span>Computer Vision</span>
+                                <span>OCR</span>
+                                <span>Video Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CERTIFICATIONS SECTION -->
+
+        <section id="learning">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">My Milestones</span>
+                    <h2 class="section-title">Learning Journey</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="journey-grid">
+                    <!-- Left Column: Timeline -->
+                    <div class="timeline-column">
+                        <h3 class="journey-col-title">Timeline</h3>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2026 - Present</span>
+                                <h4>AI/ML & Data Science Career Journey</h4>
+                                <p>Actively seeking opportunities in Artificial Intelligence, Machine Learning, Data
+                                    Science, and Python Development. Continuously enhancing skills through hands-on
+                                    projects, advanced AI research, and exploration of Agentic AI, RAG systems, and
+                                    intelligent automation solutions.
+                                </p>
+                            </div>
+
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2025 - 2026</span>
+                                <h4>Data Science & Artificial Intelligence Specialization</h4>
+                                <p>Completed intensive training in Data Science, Machine Learning, Deep Learning,
+                                    Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), and
+                                    Generative AI. Built AI-powered applications, predictive models, and interactive
+                                    data visualization projects using Python, Streamlit, and modern AI frameworks</p>
+                            </div>
+
+                            <div class="timeline-item glass">
+                                <div class="timeline-dot"></div>
+                                <span class="timeline-date">2022 - 2025</span>
+                                <h4>BCA</h4>
+                                <p>Built a strong foundation in programming, databases, web development, software
+                                    engineering, and problem-solving. Developed proficiency in Python, SQL, and modern
+                                    development tools while completing academic and personal projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Certifications & Learning Progress -->
+                    <div class="timeline-column">
+                        <h3 class="journey-col-title">Certifications & Learning</h3>
+                        <div class="certs-container">
+                            <div class="cert-card glass card-hover">
+                                <div class="cert-icon">
+                                    <i data-lucide="award" class="text-blue"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>Deep Learning Specialization</h4>
+                                    <p>DeepLearning.AI | Coursera</p>
+                                    <span class="cert-date">Completed 2025</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-card glass card-hover">
+                                <div class="cert-icon">
+                                    <i data-lucide="award" class="text-purple"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>LangChain & GenAI Engineering</h4>
+                                    <p>AI Association | Industry Certified</p>
+                                    <span class="cert-date">Completed 2025</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-card glass card-hover">
+                                <div class="cert-icon">
+                                    <i data-lucide="award" class="text-green"></i>
+                                </div>
+                                <div class="cert-details">
+                                    <h4>Advanced Database Systems & SQL Server</h4>
+                                    <p>Microsoft Certified Professional</p>
+                                    <span class="cert-date">Completed 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Progress Section -->
+                        <div class="stats-progress-box glass">
+                            <h4>AI/ML Learning Milestones</h4>
+                            <div class="mini-progress-item">
+                                <div class="progress-info">
+                                    <span>Supervised Learning Models</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="mini-bar-wrapper">
+                                    <div class="mini-bar-fill fill-blue" style="width: 98%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mini-progress-item">
+                                <div class="progress-info">
+                                    <span>Deep Neural Networks & NLP</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="mini-bar-wrapper">
+                                    <div class="mini-bar-fill fill-purple" style="width: 88%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="mini-progress-item">
+                                <div class="progress-info">
+                                    <span>Generative AI Agents (RAG)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="mini-bar-wrapper">
+                                    <div class="mini-bar-fill fill-green" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="contact">
+            <div class="section-container">
+
+                <!-- Top grid: 3 columns -->
+                <div class="footer-grid">
+
+                    <!-- Col 1: Branding -->
+                    <div class="footer-brand">
+                        <a href="#hero" class="footer-logo text-glow">
+                            <span class="logo-sym">&lt;</span>AmolAI<span class="logo-sym">/&gt;</span>
+                        </a>
+                        <p class="footer-bio">
+                            Engineering premium Python systems, predictive ML workflows, and high-performance Generative
+                            AI
+                            solutions. Passionate about transforming data into real-world intelligence.
+                        </p>
+                        <div class="footer-avail glass">
+                            <span class="pulsing-green-dot"></span>
+                            <span>Open to AI/ML, Data Science &amp; Python Opportunities</span>
+                        </div>
+                    </div>
+
+                    <!-- Col 2: Connect handles -->
+                    <div class="footer-connect-col">
+                        <h4 class="footer-col-title">Connect With Me</h4>
+                        <div class="footer-connect-list">
+
+                            <a href="mailto:shelkeamol078@gmail.com" class="footer-connect-item glass card-hover"
+                                aria-label="Email">
+                                <div class="footer-icon-box bg-badge-blue">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footer-connect-text">
+                                    <span>Email Me</span>
+                                    <strong>shelkeamol078@gmail.com</strong>
+                                </div>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/amol-shelke7821/" target="_blank" rel="noopener"
+                                class="footer-connect-item glass card-hover" aria-label="LinkedIn">
+                                <div class="footer-icon-box bg-badge-purple">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                                <div class="footer-connect-text">
+                                    <span>LinkedIn</span>
+                                    <strong>linkedin.com/amol</strong>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/Amol-78" target="_blank" rel="noopener"
+                                class="footer-connect-item glass card-hover" aria-label="GitHub">
+                                <div class="footer-icon-box bg-badge-green">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="footer-connect-text">
+                                    <span>GitHub</span>
+                                    <strong>github.com/amol</strong>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Col 3: Location + Resume -->
+                    <div class="footer-actions-col">
+                        <h4 class="footer-col-title">Location &amp; Résumé</h4>
+
+                        <div class="footer-location glass">
+                            <div class="footer-icon-box bg-badge-blue"
+                                style="width:36px;height:36px;border-radius:10px;flex-shrink:0;">
+                                <i data-lucide="map-pin" style="width:15px;height:15px;"></i>
+                            </div>
+                            <div class="footer-connect-text">
+                                <span>Location</span>
+                                <strong>Pune, Maharashtra, India</strong>
+                            </div>
+                        </div>
+
+                        <p class="footer-cv-desc">Download my comprehensive PDF resume to review my AI/ML
+                            qualifications,
+                            projects, and technical background.</p>
+
+                        <a href="assets/Amol_CV_m_1.pdf" download="Amol_Sharma_Resume.pdf"
+                            class="btn btn-primary btn-magnetic w-full">
+                            <span>Download Resume PDF</span>
+                            <i data-lucide="download"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Bottom bar -->
+                <div class="footer-bottom">
+                    <div class="footer-social-row">
+                        <a href="https://github.com/Amol-78" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/amol-shelke7821/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:shelkeamol078@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                    </div>
+                    <p>&copy; 2026 Amol Sharma &mdash; Built with Vanilla JS &amp; GSAP. All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </footer>
+        <!-- 8. FOOTER -->
+        <!-- Back to Top Button -->
+        <button class="back-to-top glass" id="back-to-top" aria-label="Back to top">
+            <i data-lucide="chevron-up"></i>
+        </button>
+
+        <!-- Success Modal PopUp -->
+        <div class="success-modal-overlay" id="success-modal">
+            <div class="success-modal glass">
+                <div class="success-icon-box">
+                    <i data-lucide="check-circle-2"></i>
+                </div>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for reaching out, Amol Sharma. I will respond to your email shortly.</p>
+                <button class="btn btn-primary" id="close-modal-btn">Close</button>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <!-- GSAP Core -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <!-- GSAP ScrollTrigger -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <!-- Lucide Icons -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+            lucide.createIcons();
+        </script>
+        <!-- Custom Application Scripts -->
+        <script src="js/canvas-bg.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/main.js"></script>
+    </main>
+</body>
+</html>
